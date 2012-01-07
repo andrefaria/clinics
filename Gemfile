@@ -7,6 +7,10 @@ gem 'rails', '3.1.0'
 
 gem 'sqlite3'
 
+gem 'twitter-bootstrap-rails'
+gem 'inherited_resources'
+gem 'devise', "1.4.9"
+
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -31,3 +35,11 @@ group :test do
   # Pretty printed test output
   gem 'turn', :require => false
 end
+
+group :test, :development do
+  gem 'rspec-rails'
+  gem 'guard-rspec'
+  gem 'guard-spork'
+  gem 'growl'
+end
+
