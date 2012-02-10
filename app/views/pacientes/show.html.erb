@@ -1,0 +1,75 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Nome:</b>
+  <%= @paciente.nome %>
+</p>
+
+<p>
+  <b>Endereco:</b>
+  <%= @paciente.endereco %>
+</p>
+
+<p>
+  <b>Bairro:</b>
+  <%= @paciente.bairro %>
+</p>
+
+<p>
+  <b>Cep:</b>
+  <%= @paciente.cep %>
+</p>
+
+<p>
+  <b>Telefone:</b>
+  <%= @paciente.telefone %>
+</p>
+
+<p>
+  <b>Celular:</b>
+  <%= @paciente.celular %>
+</p>
+
+<p>
+  <b>Data de nascimento:</b>
+  <%= @paciente.data_de_nascimento %>
+</p>
+
+<p>
+  <b>Sexo:</b>
+  <%= @paciente.sexo %>
+</p>
+
+<p>
+  <b>Nome da mae:</b>
+  <%= @paciente.nome_da_mae %>
+</p>
+
+<p>
+  <b>Nome do pai:</b>
+  <%= @paciente.nome_do_pai %>
+</p>
+
+<p>
+  <b>Convenio:</b>
+  <%= @paciente.convenio %>
+</p>
+
+<p>
+  <b>Valor parficular:</b>
+  <%= @paciente.valor_parficular %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @paciente.email %>
+</p>
+
+<p>
+  <b>Cid:</b>
+  <%= @paciente.cid %>
+</p>
+
+
+<%= link_to 'Edit', edit_paciente_path(@paciente) %> |
+<%= link_to 'Back', pacientes_path %>

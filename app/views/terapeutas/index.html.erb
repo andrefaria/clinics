@@ -1,0 +1,25 @@
+<h1>Listing terapeutas</h1>
+
+<table>
+  <tr>
+    <th>Nome</th>
+    <th>Crp</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @terapeutas.each do |terapeuta| %>
+  <tr>
+    <td><%= terapeuta.nome %></td>
+    <td><%= terapeuta.crp %></td>
+    <td><%= link_to 'Show', terapeuta %></td>
+    <td><%= link_to 'Edit', edit_terapeuta_path(terapeuta) %></td>
+    <td><%= link_to 'Destroy', terapeuta, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Terapeuta', new_terapeuta_path %>

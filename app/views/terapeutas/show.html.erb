@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Nome:</b>
+  <%= @terapeuta.nome %>
+</p>
+
+<p>
+  <b>Crp:</b>
+  <%= @terapeuta.crp %>
+</p>
+
+
+<%= link_to 'Edit', edit_terapeuta_path(@terapeuta) %> |
+<%= link_to 'Back', terapeutas_path %>

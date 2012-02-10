@@ -1,4 +1,10 @@
 Clinics::Application.routes.draw do
+  resources :pacientes
+
+  resources :convenios
+
+  resources :terapeutas
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
