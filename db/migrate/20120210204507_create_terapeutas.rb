@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class CreateTerapeutas < ActiveRecord::Migration
   def change
     create_table :terapeutas do |t|

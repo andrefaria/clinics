@@ -1,21 +1,21 @@
-<h1>Listing pacientes</h1>
+<h1>Listando pacientes</h1>
 
 <table>
   <tr>
     <th>Nome</th>
     <th>Endereco</th>
     <th>Bairro</th>
-    <th>Cep</th>
+    <th>CEP</th>
     <th>Telefone</th>
     <th>Celular</th>
     <th>Data de nascimento</th>
     <th>Sexo</th>
     <th>Nome da mae</th>
     <th>Nome do pai</th>
-    <th>Convenio</th>
+    <th>Convênio</th>
     <th>Valor parficular</th>
-    <th>Email</th>
-    <th>Cid</th>
+    <th>E-mail</th>
+    <th>CID</th>
     <th></th>
     <th></th>
     <th></th>
@@ -37,13 +37,13 @@
     <td><%= paciente.valor_parficular %></td>
     <td><%= paciente.email %></td>
     <td><%= paciente.cid %></td>
-    <td><%= link_to 'Show', paciente %></td>
-    <td><%= link_to 'Edit', edit_paciente_path(paciente) %></td>
-    <td><%= link_to 'Destroy', paciente, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= link_to 'Exibir', paciente %></td>
+    <td><%= link_to 'Editar', edit_paciente_path(paciente) %></td>
+    <td><%= link_to 'Deletar', paciente, :confirm => 'Tem certeza?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New Paciente', new_paciente_path %>
+<%= link_to 'Novo Paciente', new_paciente_path %>

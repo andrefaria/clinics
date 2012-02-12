@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module Inflector
   ActiveSupport::Inflector.inflections do |inflect|
     inflect.clear

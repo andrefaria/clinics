@@ -1,5 +1,3 @@
-= require jquery
-= require twitter/bootstrap
-= require_tree .
+//= require jquery
+//= require twitter/bootstrap
 //= require jquery_ujs
-

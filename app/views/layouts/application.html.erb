@@ -7,8 +7,21 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+	<div class="navbar">
+		<div class="navbar-inner">
+			<div class="container">
+				<%= link_to 'Clinics', '/', :class => "brand" %>
 
-<%= yield %>
+				<ul class="nav">
+					<li><%= link_to 'Convenios', convenios_path %></li>
+					<li><%= link_to 'Pacientes', pacientes_path %></li>
+					<li><%= link_to 'Terapeutas', terapeutas_path %></li>
+				</ul>
+			</div>
+  		</div>
+  </div>
+
+  <%= yield %>
 
 </body>
 </html>

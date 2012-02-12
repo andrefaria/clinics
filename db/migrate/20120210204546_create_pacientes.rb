@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class CreatePacientes < ActiveRecord::Migration
   def change
     create_table :pacientes do |t|
@@ -8,13 +9,13 @@ class CreatePacientes < ActiveRecord::Migration
       t.string :telefone
       t.string :celular
       t.date :data_de_nascimento
-      t.char :sexo
+      t.string :sexo
       t.string :nome_da_mae
       t.string :nome_do_pai
-      t.Convenio :convenio
       t.decimal :valor_parficular
       t.string :email
       t.string :cid
+      t.references :convenio
 
       t.timestamps
     end

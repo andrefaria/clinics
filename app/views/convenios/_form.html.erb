@@ -1,7 +1,7 @@
 <%= form_for(@convenio) do |f| %>
   <% if @convenio.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@convenio.errors.count, "error") %> prohibited this convenio from being saved:</h2>
+      <h2><%= pluralize(@convenio.errors.count, "erro impediu") %> o convênio de ser salvo:</h2>
 
       <ul>
       <% @convenio.errors.full_messages.each do |msg| %>
@@ -12,10 +12,10 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :nome %><br />
+    <%= f.label :nome %>
     <%= f.text_field :nome %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit "Salvar Paciente", :class => "btn-success" %>
   </div>
 <% end %>

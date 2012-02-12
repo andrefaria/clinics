@@ -1,9 +1,9 @@
-<h1>Listing terapeutas</h1>
+<h1>Listando terapeutas</h1>
 
 <table>
   <tr>
     <th>Nome</th>
-    <th>Crp</th>
+    <th>CRP</th>
     <th></th>
     <th></th>
     <th></th>
@@ -13,13 +13,13 @@
   <tr>
     <td><%= terapeuta.nome %></td>
     <td><%= terapeuta.crp %></td>
-    <td><%= link_to 'Show', terapeuta %></td>
-    <td><%= link_to 'Edit', edit_terapeuta_path(terapeuta) %></td>
-    <td><%= link_to 'Destroy', terapeuta, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= link_to 'Exibir', terapeuta %></td>
+    <td><%= link_to 'Editar', edit_terapeuta_path(terapeuta) %></td>
+    <td><%= link_to 'Deletar', terapeuta, :confirm => 'Tem certeza?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New Terapeuta', new_terapeuta_path %>
+<%= link_to 'Novo Terapeuta', new_terapeuta_path %>
